@@ -15,14 +15,8 @@
 
 module.exports = (robot) ->
         robot.respond /tikka status/i, (msg) ->
-                msg.http('https://p-1.livemarketdata.com/status/itch/json')
-                .get() (err, res, body) ->
+                msg.http('https://p-1.livemarketdata.com/status/itch/json').get() (err, res, body) ->
+                        if err
+                                msg.send "ERROR: Unable to connect to the server"
                         data = JSON.parse(body)
-                        if data.itch_status == "online" and data.tcp_status == "online"
-                                msg.send "ITCH is up and running"
-                        else if data.itch_status != "online"
-                                msg.send "ITCH has status #{data.itch_status} with TCP status #{data.tcp_status}"
-                        else if data.tcp_status != "online"
-                                msg.send "ITCH has status #{data.itch_status} with TCP status #{data.tcp_status}"
-                        else
-                                msg.send "ITCH status is unknown"
+                        msg.send "ITCH status is #{data.itch_status} and TCP status is #{data.tcp_status}"
