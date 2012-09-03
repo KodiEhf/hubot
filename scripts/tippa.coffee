@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot tikka status - Checks if <domain> is up
+#   hubot tippa status - Checks if tippa is up
 #
 # Author:
 #   jmhobbs
