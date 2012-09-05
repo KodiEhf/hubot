@@ -15,8 +15,6 @@
   },
 
   "dependencies": {
-      "node-stringprep": ">= 0.0.1",
-      "hubot-gtalk": ">= 0.0.1",
       "hubot-flowdock": ">= 0.0.1",
       "xml2js": "0.1.14",
       "node-uuid": ">= 0.0.1",
