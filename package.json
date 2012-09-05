@@ -15,8 +15,12 @@
   },
 
   "dependencies": {
+      "node-stringprep": ">= 0.0.1",
+      "hubot-gtalk": ">= 0.0.1",
       "hubot-flowdock": ">= 0.0.1",
       "xml2js": "0.1.14",
+      "node-uuid": ">= 0.0.1",
+      "date-utils": ">= 0.0.1",
       "hubot": "2.3.2",
       "hubot-scripts": ">= 2.1.0",
       "optparse": "1.0.3"
