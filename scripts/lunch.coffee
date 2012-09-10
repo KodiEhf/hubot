@@ -10,19 +10,19 @@
 module.exports = (robot) ->
 
 	places = [
-		"Ali Baba - Swherma númer 6 takk",
-		"Búllan - Tilboð aldarinnar",
-		"Súpubarinn - Eina franska baunasúpu",
-		"Icelandic Fish & Chips - alltaf hægt að ljúga að sér að það sé hollt",
-		"Hlöllabátar - Uhmmm, Bacon",
-		"Micro barinn - sláum þessu bara upp í kæruleysi",
-		"American Style - Gott tilboð",
-		"Pizza Royale - Besta tilboðið",
+		"Ali Baba - Swherma numer 6 takk",
+		"Bullan - Tilbod aldarinnar",
+		"Supubarinn - Eina franska baunasupu",
+		"Icelandic Fish & Chips - alltaf haegt ad ljuga ad sér ad þad sé hollt",
+		"Hlöllabatar - Uhmmm, Bacon",
+		"Micro barinn - slaum þessu bara upp i kaeruleysi",
+		"American Style - Gott tilbod",
+		"Pizza Royale - Besta tilbodid",
 		"Nonna biti - ferskur og freistandi",
-		"Sægreifinn - svona einusinni áður en hann dettur niður",
-		"Kvosin - þeir fá einn séns enn",
-		"Kebab húsið - klikkar ekki",
-		"St. Paul's - Einn Grænlending takk",
+		"Saegreifinn - svona einusinni adur en hann dettur nidur",
+		"Kvosin - þeir fa einn séns enn",
+		"Kebab husid - klikkar ekki",
+		"St. Paul's - Einn Graenlending takk",
 		"Rub 23 - Sushi pizza"
 	]
 
