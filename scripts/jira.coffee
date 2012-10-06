@@ -104,7 +104,6 @@ module.exports = (robot) ->
     msg.http(process.env.HUBOT_JIRA_URL + "/rest/api/latest/" + where).
       header('Authorization', 'Basic ' + authdata).
       get() (err, res, body) ->
-        console.log err, res, body
         cb JSON.parse(body)
 
   watchers = (msg, issue, cb) ->
@@ -197,7 +196,7 @@ module.exports = (robot) ->
           msg.send text
         recentissues.add msg.message.user.room+ticket
 
-  robot.respond /(?:case) ([^\w\-]|^)(\w+-[0-9]+)(?=[^\w]|$)/ig, (msg) ->
+  robot.hear /(?:case|issue|c|i)([^\w\-]|^)(\w+-[0-9]+)(?=[^\w]|$)/ig, (msg) ->
     if msg.message.user.id is robot.name
       return
 
