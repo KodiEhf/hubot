@@ -115,6 +115,7 @@ module.exports = (robot) ->
 
   info = (msg, issue, cb) ->
     get msg, "issue/#{issue}", (issues) ->
+      cb "hi"
       if issues.errors?
         return
 
