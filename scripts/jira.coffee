@@ -116,7 +116,6 @@ module.exports = (robot) ->
 
   info = (msg, issue, cb) ->
     get msg, "issue/#{issue}", (issues) ->
-      cb "hi"
       if issues.errors?
         return
 
@@ -184,6 +183,21 @@ module.exports = (robot) ->
       msg.reply text
   
   robot.respond /([^\w\-]|^)(\w+-[0-9]+)(?=[^\w]|$)/ig, (msg) ->
+    if msg.message.user.id is robot.name
+      return
+
+    if (ignoredusers.some (user) -> user == msg.message.user.name)
+      console.log 'ignoring user due to blacklist:', msg.message.user.name
+      return
+   
+    for matched in msg.match
+      ticket = (matched.match /(\w+-[0-9]+)/)[0]
+      if !recentissues.contains msg.message.user.room+ticket
+        info msg, ticket, (text) ->
+          msg.send text
+        recentissues.add msg.message.user.room+ticket
+
+  robot.respond /(?:case) ([^\w\-]|^)(\w+-[0-9]+)(?=[^\w]|$)/ig, (msg) ->
     if msg.message.user.id is robot.name
       return
 
