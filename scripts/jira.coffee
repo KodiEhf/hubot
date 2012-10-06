@@ -104,6 +104,7 @@ module.exports = (robot) ->
     msg.http(process.env.HUBOT_JIRA_URL + "/rest/api/latest/" + where).
       header('Authorization', 'Basic ' + authdata).
       get() (err, res, body) ->
+        console.log err, res, body
         cb JSON.parse(body)
 
   watchers = (msg, issue, cb) ->
