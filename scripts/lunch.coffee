@@ -5,25 +5,32 @@
 #   hubot lunch me - Show a random lunch joint
 #
 # Author:
-#   Örn Þórðarson
+#   Ã–rn ÃžÃ³rÃ°arson
 
 module.exports = (robot) ->
 
 	places = [
-		"Ali Baba - Swherma númer 6 takk",
-		"Búllan - Tilboð aldarinnar",
-		"Súpubarinn - Eina franska baunasúpu",
-		"Icelandic Fish & Chips - alltaf hægt að ljúga að sér að það sé hollt",
-		"Hlöllabátar - Uhmmm, Bacon",
-		"Micro barinn - sláum þessu bara upp í kæruleysi",
-		"American Style - Gott tilboð",
-		"Pizza Royale - Besta tilboðið",
+		"Ali Baba - Swherma numer 6 takk",
+		"Bullan - Tilbod aldarinnar",
+		"Supubarinn - Eina franska baunasupu",
+		"Icelandic Fish & Chips - alltaf haegt ad ljuga ad sÃ©r ad Ã¾ad sÃ© hollt",
+		"HlÃ¶llabatar - Uhmmm, Bacon",
+		"Micro barinn - slaum Ã¾essu bara upp i kaeruleysi",
+		"American Style - Gott tilbod",
+		"Pizza Royale - Besta tilbodid",
 		"Nonna biti - ferskur og freistandi",
-		"Sægreifinn - svona einusinni áður en hann dettur niður",
-		"Kvosin - þeir fá einn séns enn",
-		"Kebab húsið - klikkar ekki",
-		"St. Paul's - Einn Grænlending takk",
-		"Rub 23 - Sushi pizza"
+		"Saegreifinn - svona einusinni adur en hann dettur nidur",
+		"Kvosin - Ã¾eir fa einn sÃ©ns enn",
+		"Kebab husid - klikkar ekki",
+		"St. Paul's - Einn Graenlending takk",
+		"Rub 23 - Sushi pizza",
+		"Ginger - heilsa heilsa heilsa",
+		"AusturlandahraÃ°lestin - Tandoori veisla",
+		"Nora Magazine - fancy shit",
+		"Bergson - bragÃ°laus heilsa",
+		"Geysir - mikiÃ° fyrir peninginn",
+		"IÃ°a - upphitaÃ° shit"
+		
 	]
 
 	robot.respond /lunch me/i, (msg) ->
