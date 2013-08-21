@@ -23,7 +23,14 @@ module.exports = (robot) ->
 		"Kvosin - þeir fa einn séns enn",
 		"Kebab husid - klikkar ekki",
 		"St. Paul's - Einn Graenlending takk",
-		"Rub 23 - Sushi pizza"
+		"Rub 23 - Sushi pizza",
+		"Ginger - heilsa heilsa heilsa",
+		"Austurlandahraðlestin - Tandoori veisla",
+		"Nora Magazine - fancy shit",
+		"Bergson - bragðlaus heilsa",
+		"Geysir - mikið fyrir peninginn",
+		"Iða - upphitað shit"
+		
 	]
 
 	robot.respond /lunch me/i, (msg) ->
