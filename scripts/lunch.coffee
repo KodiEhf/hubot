@@ -22,7 +22,7 @@ module.exports = (robot) ->
 		"Saegreifinn - svona einusinni adur en hann dettur nidur",
 		"Kvosin - şeir fa einn séns enn",
 		"Kebab husid - klikkar ekki",
-		"St. Paul's - Einn Graenlending takk",
+		"Kebab Grill - besta kebab í Reykjavík áriğ 2012",
 		"Rub 23 - Sushi pizza",
 		"Ginger - heilsa heilsa heilsa",
 		"Austurlandahrağlestin - Tandoori veisla",
